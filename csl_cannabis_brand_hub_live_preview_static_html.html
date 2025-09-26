@@ -1,0 +1,256 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Case Study Labs — Cannabis Brand Hub (Preview)</title>
+<style>
+:root{--bg:#fff;--fg:#111;--muted:#666;--brand:#111;--card:#fafafa;--border:#eaeaea;--accent:#f15b27;--accent2:#54a5db}
+*{box-sizing:border-box}html,body{margin:0;padding:0;background:var(--bg);color:var(--fg);font:16px/1.5 Inter,system-ui,Segoe UI,Roboto,Helvetica,Arial}
+img{max-width:100%;height:auto}.container{max-width:1100px;margin:0 auto;padding:0 24px}.center{text-align:center}.muted{color:var(--muted)}.small{font-size:.85rem}
+.py-16{padding:4rem 0}.py-10{padding:2.5rem 0}.flex{display:flex}.space-between{justify-content:space-between}.align-center{align-items:center}
+.grid-2{display:grid;grid-template-columns:1fr;gap:24px}@media(min-width:900px){.grid-2{grid-template-columns:1fr 1fr}}
+.grid-3{display:grid;grid-template-columns:1fr;gap:16px}@media(min-width:900px){.grid-3{grid-template-columns:repeat(3,1fr)}}
+.btn{display:inline-flex;align-items:center;gap:.5rem;padding:.9rem 1.1rem;border-radius:12px;border:1px solid var(--border);text-decoration:none;font-weight:600}
+.btn-primary{background:var(--brand);color:#fff;border-color:var(--brand)}.btn-ghost{background:#fff;color:var(--fg)}
+.badges{display:flex;gap:.5rem;flex-wrap:wrap;justify-content:center;margin-top:1rem}
+.badge{border:1px solid var(--border);padding:.4rem .7rem;border-radius:999px;background:#fff;font-size:.8rem}
+.site-header .brand{font-weight:800;letter-spacing:.3px}
+.hero{position:relative;overflow:hidden;padding:5rem 0;background:linear-gradient(135deg, rgba(241,91,39,.08), rgba(84,165,219,.08))}
+.hero .kicker{display:inline-flex;gap:.5rem;align-items:center;border:1px solid var(--border);padding:.3rem .6rem;border-radius:999px;background:#fff;font-weight:600;font-size:.75rem}
+.hero h1{font-size:clamp(2rem,5vw,3.5rem);line-height:1.1;margin:.7rem 0 0}.hero .lede{max-width:800px;margin:1rem auto;color:#333;font-size:1.1rem}
+.cta-row{display:flex;gap:.7rem;justify-content:center;margin-top:1rem;flex-wrap:wrap}
+.logos{padding:2rem 0;border-top:1px solid var(--border)}
+.logo-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-top:1rem}
+.logo{height:44px;display:flex;align-items:center;justify-content:center;border:1px dashed var(--border);background:#fff;color:#888;font-size:.8rem;border-radius:10px}
+@media(min-width:900px){.logo-grid{grid-template-columns:repeat(5,1fr)}}
+.split{padding:4rem 0}
+.checks{list-style:none;padding:0;margin:1rem 0}.checks li{padding-left:1.6rem;position:relative}.checks li:before{content:"✓";position:absolute;left:0;color:var(--fg)}
+.demo{aspect-ratio:4/3;border:1px solid var(--border);border-radius:20px;background:var(--card);display:flex;align-items:center;justify-content:center;color:var(--muted)}
+.features{padding:3rem 0;background:#fafafa;border-block:1px solid var(--border)}.card{background:#fff;border:1px solid var(--border);border-radius:16px;padding:1rem}
+.roi{padding:4rem 0}.roi-value{font-size:3rem;font-weight:800}
+.use-cases{padding:3rem 0;border-top:1px solid var(--border)}
+.testimonials{padding:4rem 0;background:#fafafa;border-block:1px solid var(--border)}
+.comparison{padding:3rem 0}
+.responsive-table table{width:100%;border-collapse:collapse;border:1px solid var(--border);border-radius:12px;overflow:hidden}
+.responsive-table th,.responsive-table td{padding:12px;border-top:1px solid var(--border);text-align:left}
+.faq{padding:3rem 0}.faq details{border-top:1px solid var(--border);padding:12px 0}
+.contact{padding:4rem 0;background:var(--brand);color:#fff}.contact .card{background:#fff;color:#111}
+.site-footer{padding:2rem 0}
+.csl-disclaimer{margin-top:1rem;color:#666;font-size:.85rem}
+/* Age gate */
+.csl-age-gate{position:fixed;inset:0;background:rgba(0,0,0,.7);display:none;place-items:center;z-index:9999}
+.csl-age-card{background:#fff;color:#111;border-radius:16px;border:1px solid var(--border);padding:24px;max-width:420px;width:92%}
+.csl-age-actions{display:flex;gap:.5rem;margin-top:1rem}
+.no-scroll{overflow:hidden}
+</style>
+</head>
+<body>
+<header class="site-header">
+  <div class="container flex space-between align-center py-16">
+    <div class="brand">Case Study Labs</div>
+    <nav class="nav" aria-label="Primary">
+      <a class="btn btn-ghost" href="#faq">FAQ</a>
+      <a class="btn btn-ghost" href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+<main id="content">
+<section class="hero">
+  <div class="container center">
+    <p class="kicker">Cannabis-Ready Compliance</p>
+    <h1>The Cannabis Brand Hub your team actually uses</h1>
+    <p class="lede">Case Study Labs builds and manages your single source of truth—guidelines, assets, COAs, packaging files, and workflows—so compliance sticks and launches don’t slip.</p>
+    <div class="cta-row">
+      <a class="btn btn-primary" href="#contact">Book a 20‑min fit call</a>
+      <a class="btn btn-ghost" href="#tour">See how it works</a>
+    </div>
+    <ul class="badges">
+      <li class="badge">Age-gate + disclaimers built-in</li>
+      <li class="badge">SKU drop workflows</li>
+      <li class="badge">State-by-state rules</li>
+    </ul>
+  </div>
+</section>
+
+<section id="logos" class="logos">
+  <div class="container center">
+    <p class="muted">Trusted by teams who move fast</p>
+    <div class="logo-grid">
+      <div class="logo">Grand National</div>
+      <div class="logo">The Other Magazine</div>
+      <div class="logo">Skyworld</div>
+      <div class="logo">Amplified</div>
+      <div class="logo">Wonder Brink</div>
+    </div>
+  </div>
+</section>
+
+<section id="tour" class="split">
+  <div class="container grid-2">
+    <div>
+      <h2>Kill the compliance scramble</h2>
+      <p>Cannabis moves fast and regulators move faster. If age gates, disclaimers, and packaging files live in seven places, you’re burning time and inviting risk. We centralize it and wire in guardrails so you can ship new SKUs without heartburn.</p>
+      <ul class="checks">
+        <li>One searchable home for assets, COAs, dielines, and claims</li>
+        <li>Built-in age gate + market-specific disclaimers (CA, NY, MA, etc.)</li>
+        <li>Approval workflows so nothing off-label hits the wild</li>
+        <li>Expiring campaign assets to avoid post-promotion violations</li>
+      </ul>
+    </div>
+    <div>
+      <div class="demo">Demo Placeholder — swap with screenshots or a short video.</div>
+    </div>
+  </div>
+</section>
+
+<section class="features">
+  <div class="container">
+    <h3>What you get</h3>
+    <div class="grid-3">
+      <div class="card"><h4>Single Source of Truth</h4><p>Logos, packaging files, dielines, COAs, strain copy, photo/video—organized, versioned, and trusted.</p></div>
+      <div class="card"><h4>Age Gates & Disclaimers</h4><p>Compliant age verification and market-specific disclaimers you won’t forget to update.</p></div>
+      <div class="card"><h4>Packaging & Label Governance</h4><p>Template library with required statements, panels, and claim guardrails—reduce relabel risk.</p></div>
+      <div class="card"><h4>SKU Drop Workflows</h4><p>From lab results to shelf: intake → approval → publish kits for retailers and partners in one click.</p></div>
+      <div class="card"><h4>Usage Analytics</h4><p>See what assets move: which retailers download what, and when—plan content and cut waste.</p></div>
+      <div class="card"><h4>Tool-Agnostic Setup</h4><p>Corebook, Notion, WordPress, Bynder, Brandfolder—or a hybrid tailored to your stack and budget.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="roi">
+  <div class="container grid-2">
+    <div>
+      <h3>Prove it to finance</h3>
+      <p>Estimate monthly time saved by centralizing brand assets. Adjust the inputs to match your team.</p>
+      <label>Team members accessing assets <input id="teamSize" type="number" min="3" max="250" value="25"></label>
+      <label>Hours saved per person / week <input id="hoursSaved" type="number" min="1" max="10" value="4"></label>
+    </div>
+    <div class="card">
+      <div class="muted">Projected monthly value</div>
+      <div id="roiValue" class="roi-value">$26,000</div>
+      <p class="muted">Based on a blended hourly rate of $65. Update this to your org’s rate.</p>
+      <a class="btn btn-primary" href="#contact">Calculate your exact ROI</a>
+    </div>
+  </div>
+</section>
+
+<section class="use-cases">
+  <div class="container">
+    <h3>Built for cannabis teams</h3>
+    <div class="grid-3">
+      <div class="card"><h4>Brand & Marketing</h4><ul class="bullets"><li>Launch promos fast with pre-approved kits</li><li>Stay on-brand across markets with localized variants</li><li>Kill off-label claims before they ship</li></ul></div>
+      <div class="card"><h4>Retail & Field Teams</h4><ul class="bullets"><li>Give dispensaries the right files every time</li><li>Auto-expire promos by jurisdiction</li><li>Reduce back-and-forth with HQ</li></ul></div>
+      <div class="card"><h4>Compliance & Ops</h4><ul class="bullets"><li>Age gate + disclaimers handled</li><li>Packaging templates with required panels</li><li>COA vault mapped to each SKU</li></ul></div>
+    </div>
+  </div>
+</section>
+
+<section class="testimonials">
+  <div class="container grid-3">
+    <blockquote class="card">“Case Study Labs turned our spaghetti of folders and COAs into a clean, trusted hub. We cut relabel risk and got product drops out a week faster.”<footer>— VP Brand, Example Co.</footer></blockquote>
+    <blockquote class="card">“Compliance used to be a fire drill. Now it’s a checklist. Vendors finally have one link for current assets.”<footer>— Director of Ops</footer></blockquote>
+    <blockquote class="card">“Launches are smoother, tickets dropped by half, and field teams stopped improvising.”<footer>— Growth Lead</footer></blockquote>
+  </div>
+</section>
+
+<section class="comparison">
+  <div class="container responsive-table">
+    <h3>Why Case Study Labs vs. DIY</h3>
+    <table>
+      <thead><tr><th>Capability</th><th>Case Study Labs</th><th>DIY / Internal</th></tr></thead>
+      <tbody>
+        <tr><td>Compliance Guardrails</td><td>Age gate, disclaimers, claims review</td><td>Manual, error-prone</td></tr>
+        <tr><td>Packaging & Labeling</td><td>Templates + review workflow</td><td>Ad hoc files, relabel risk</td></tr>
+        <tr><td>Retail Enablement</td><td>Role-based access + distributor kits</td><td>Scattered links, outdated</td></tr>
+        <tr><td>Time to Launch</td><td>30–45 days</td><td>90+ days</td></tr>
+        <tr><td>Budget Reality (Green Tax)</td><td>Tool-agnostic, right-sized stack</td><td>Over-licensed or under-invested</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<section id="faq" class="faq">
+  <div class="container">
+    <h3>FAQs</h3>
+    <details><summary>Is this a software product or a service?</summary><p>It’s a done-for-you service by Case Study Labs. We set up and run your brand asset hub using best-in-class tools (Corebook, Notion, WordPress, Bynder, or your stack), plus governance, workflows, and training.</p></details>
+    <details><summary>Do you handle cannabis-specific compliance like age gates and disclaimers?</summary><p>Yes. We implement age verification and market-specific disclaimers (e.g., CA, NY, MA) and keep a rules library so updates roll out fast.</p></details>
+    <details><summary>Can you manage COAs and packaging?</summary><p>We centralize COAs, map them to SKUs, and maintain packaging/label templates with required statements, nutrition/THC panels, and claim guardrails.</p></details>
+    <details><summary>What about rapid product drops?</summary><p>We build SKU drop workflows from lab results to retailer kits. Approvals, asset generation, and distribution happen in one trackable path.</p></details>
+    <details><summary>Budgets are tight because of the green tax. Can you right-size this?</summary><p>Absolutely. We’re platform-agnostic and design to your reality: start lean, automate where it matters, and scale when the market allows.</p></details>
+  </div>
+</section>
+
+<section id="contact" class="contact">
+  <div class="container grid-2">
+    <div>
+      <h3>Let’s centralize your cannabis brand—fast</h3>
+      <ul class="checks">
+        <li>Brand, COA & packaging audit</li>
+        <li>Platform recommendation (Corebook, Notion, WordPress, etc.)</li>
+        <li>SKU drop workflow + rewrite plan</li>
+        <li>Compliance governance & training roadmap</li>
+      </ul>
+    </div>
+    <form class="card" onsubmit="return false;">
+      <label>Name<input name="name" required></label>
+      <label>Work email<input type="email" name="email" required></label>
+      <label>Company<input name="company" required></label>
+      <label>Current situation<textarea name="message" rows="4" placeholder="Which states do you operate in? Where do COAs, packaging files, and assets live today? What’s breaking during drops?"></textarea></label>
+      <button class="btn btn-primary" type="submit">Request a fit call</button>
+      <p class="muted small">By submitting, you agree to our terms. No spam. Ever.</p>
+    </form>
+  </div>
+</section>
+</main>
+<footer class="site-footer">
+  <div class="container">
+    <p>© <span id="year"></span> Case Study Labs.</p>
+    <p class="csl-disclaimer">For adult use only where legal. Follow all local regulations. Keep out of reach of children.</p>
+  </div>
+</footer>
+
+<!-- Age Gate Overlay -->
+<div id="csl-age-gate" class="csl-age-gate" aria-hidden="true">
+  <div class="csl-age-card" role="dialog" aria-labelledby="csl-age-title" aria-describedby="csl-age-desc">
+    <h2 id="csl-age-title">Age Verification</h2>
+    <p id="csl-age-desc">You must be of legal age to enter this site.</p>
+    <div class="csl-age-actions">
+      <button id="csl-age-yes" class="btn btn-primary">I am 21+</button>
+      <button id="csl-age-no" class="btn btn-ghost">I am under 21</button>
+    </div>
+  </div>
+</div>
+
+<script>
+// ROI calc
+(function(){
+  function calc(){
+    var t = parseInt(document.getElementById('teamSize')?.value||'25',10);
+    var h = parseInt(document.getElementById('hoursSaved')?.value||'4',10);
+    var hourly = 65; // tweak as needed
+    var monthly = Math.round(t*h*hourly*4);
+    var el = document.getElementById('roiValue'); if(el){ el.textContent = '$' + monthly.toLocaleString(); }
+  }
+  ['teamSize','hoursSaved'].forEach(function(id){ var el=document.getElementById(id); if(el){ el.addEventListener('input', calc); }});
+  calc();
+})();
+
+// Age gate demo (toggleable)
+(function(){
+  var KEY='csl_age_preview_v1';
+  var gate=document.getElementById('csl-age-gate');
+  function open(){ gate.style.display='grid'; document.body.classList.add('no-scroll'); }
+  function close(){ gate.style.display='none'; document.body.classList.remove('no-scroll'); }
+  // show once per load; click brand to re-open for testing
+  open();
+  document.getElementById('csl-age-yes').addEventListener('click', function(){ close(); localStorage.setItem(KEY,'yes'); });
+  document.getElementById('csl-age-no').addEventListener('click', function(){ window.location.href='https://www.google.com'; });
+  document.querySelector('.brand').addEventListener('click', function(){ open(); });
+})();
+
+// Year
+document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
